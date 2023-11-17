@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exercise11.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 align="center">Driving License Applicant Details</h1>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-4 mb-3">
+                <label class="form-label">*Name of the Applicant</label>
+                <input type="text" class="form-control" id="name1" placeholder="FIRST NAME">
+            </div>
+            <div class="col-4 mb-3" style="margin-top: 30px;">
+                <input type="text" class="form-control" id="name2" placeholder="MIDDLE NAME">
+            </div>
+            <div class="col-4 mb-3" style="margin-top: 30px;">
+                <input type="text" class="form-control" id="name3" placeholder="LAST NAME">
+            </div>
+
+
+            <div class="row">
+                <div class="col-3 mb-3">
+                    <label>*Relationship</label>
+                    <select aria-label="Default select example" id="rel" class="form-control" required >
+                        <option selected>Select</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                    </select>
+                </div>
+                <div class="col-3 mb-3" style="margin-top: 23px;">
+                    <input type="text" class="form-control" placeholder="FIRST NAME">
+                </div>
+                <div class="col-3 mb-3" style="margin-top: 23px;">
+                    <input type="text" class="form-control" placeholder="MIDDLE NAME">
+                </div>
+                <div class="col-3 mb-3" style="margin-top: 23px;">
+                    <input type="text" class="form-control" placeholder="LAST NAME">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <label class="form-label">*Full Name As Per Records</label>
+                    <input type="text" class="form-control" id="full" placeholder="NEW FULL NAME" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-6">
+                    <label for="gender" class="form-label m-3">*Gender</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="fmale">Female
+                </div>
+                <div class="col-6">
+                    <label  class="form-label m-3">*Date of Birth</label>
+                    <input type="date" id="dob">
+                    <label  class="form-label m-3">Age</label>
+                    <input type="text" placeholder="AGE" id="age" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label class="form-label" >*Place Of Birth</label>
+                    <input type="text" class="form-control" id="pob" placeholder="PLACE OF BIRTH">
+                </div>
+                <div class="col-6 mb-3">
+                    <label class="form-label">*Country</label>
+                    <input type="text" class="form-control" id="count" placeholder="COUNTRY">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <label >*Qualification</label>
+                    <select aria-label="Default select example" id="qual" class="form-control"required>
+                        <option selected>Select</option>
+                        <option >Btech</option>
+                        <option>Mtech</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label >Blood Group</label>
+                    <select aria-label="Default select example" id="blood" class="form-control">
+                        <option selected>Select</option>
+                        <option value="1">A+</option>
+                        <option value="2">O+</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                        <label  class="form-label" style="margin-top: 10px;">Landline</label>
+                        <input type="text" class="form-control" id="land" placeholder="LANDLINE NUMBER" >
+                </div>
+                <div class="col-6 ">
+                        <label  class="form-label" style="margin-top: 10px;">*Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="EMAIL" required> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                        <label class="form-label" style="margin-top: 10px;">*Phone Number</label>
+                        <input type="text" class="form-control" id="phn" placeholder="PHONE NUMBER">
+                </div>
+                <div class="col-6 ">
+                        <label class="form-label" style="margin-top: 10px;">Emergency Number</label>
+                        <input type="text" class="form-control" id="emn" placeholder="EMERGENCY NUMBER">
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="button" style="margin-top: 10px;" class="btn btn-warning" onclick="canonEvent()">Submit</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
